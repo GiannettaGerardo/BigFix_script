@@ -1,0 +1,4 @@
+// Controllo esistenza e avvaloramento di settings multipli
+// Bisogna inserire hardcoded i settings nella lista e il numero di settings per il controllo
+
+(((name of it is "Win10" AND exists file "C:\windows\besbase.cfg") OR (name of it is not "Win10" AND exists file "/etc/besbase.cfg")) of operating system) AND (number of (values whose (it is not "") of it, names whose (it is contained by set of ("Customer"; "WSUSGroup")) of it) of settings of client) != 2

@@ -19,6 +19,7 @@ function check_setting_line { param ([string]$setting, [string]$line)
 
 function main {
   <# array creato tramite relevance, per questo contiene una stringa vuota alla fine da eliminare #>
+  <# relevance: $arr=({("'" & name of it, value of it & "', ") of settings whose (exists name whose (set of ("Customer"; "WSUSGroup") contains it) of it) of client}'') #>
   $arr = @('Customer, 2', 'WSUSGroup, 0001', 'Ultimo, 01010', 'NonCiSono, 9099', '')
   [System.Collections.ArrayList]$arr = $arr[0..($arr.count - 2)]
 
