@@ -29,7 +29,7 @@ main() {
         # non presenti nel file, ma da inserire successivamente
         settings[$i]=''
         # se i valori non combaciano, allora bisogna modificare il file
-        if [ "$SPLIT[1]" != "$settings[(( i + 1 ))]" ]
+        if [ "${SPLIT[1]}" != "${settings[(( i + 1 ))]}" ]
         then
           write_flag=1
         fi
