@@ -1,7 +1,8 @@
 #!/bin/bash
 
 main() {
-# array creato tramite relevance,
+# array creato tramite relevance
+# settungs=({("'" & name of it & "' '" & value of it & "' ") of settings whose (exists name whose (set of ("Customer"; "lol"; "Super"; "WSUSGroup") contains it) of it) of client})
   settings=('lol' '0003' 'Customer' '10' 'Super' '0001' 'WSUSGroup' '8999' )
 
 # controllo se la relevance non ha ritornato niente
